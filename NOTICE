@@ -1,0 +1,7 @@
+Third-party files included for reproducibility, under their own licenses:
+
+- c13/data/bpz/: data and certificates from the public Lean repository of Buys, Polak and Zuiddam (Apache License 2.0; see c13/data/bpz/LICENSE).
+- c13/data/long/: certificates from G. Long's public repository (Apache License 2.0; see c13/data/long/LICENSE).
+- c7/base_c7.json and c7/tang_reference.json: base gadget data from BPZ and reference data from L. Tang's public certificate, used for calibration.
+
+Everything else in this repository is released under CC BY 4.0 (see LICENSE).

@@ -1,0 +1,28 @@
+[G5] gadget conditions and 7-family realisation verified; sizes (359, 322, 19, 26, 8, 8, 8)
+[calib] BPZ CertC7: M reproduced from Lean schedule = True; rate 3.2588279859200070 (d = 500)
+[G10] |I_10| = 134753, |X10| = 134689; I_10 independent in C7^10: True; T(I_10) independent: True
+[J+ exchanges_tang.txt] 8 exchanges, |J+| = 134753, independent in C7^10: True, C1 = |J+ minus N(X0_10)| = 27488
+[J+ exchanges.txt] 272 exchanges, |J+| = 134753, independent in C7^10: True, C1 = |J+ minus N(X0_10)| = 27512
+[calib] C3 (Tang J+) = 14045805, C3 (J+_d) = 14047245
+[calib] |T(I_15)|, C2 = (49495055, 12839823)  (Tan: 49495055, 12839823)
+[G10] explicit X10 classes agree with the Gao profile formula (134753, 5152, 134689, 105709, 14490, 14490)
+[J15'] independence: label-separated
+[J15'] (j, q) = (49496015, 12843063)  claimed (49496015, 12843063)
+[flat] N<N<N<N<P15A8,G5>,sG5>,G5>,sG5>: k = 7, 1383 words, label-separated; (j, q) = (902811969467537039, 320055843697850823); matches claim: True
+[flat] N<N<N<P15A8,G5>,sG5>,G5>: k = 6, 493 words, label-separated; (j, q) = (2456189457170401, 842020795989552); matches claim: True
+[flat] N<N<P15A8,G5>,sG5>: k = 5, 166 words, label-separated; (j, q) = (6682859200815, 2169812061039); matches claim: True
+[flat] N<P15A8,G5>: k = 4, 59 words, label-separated; (j, q) = (18185380033, 5419212384); matches claim: True
+[flat] N<N<N<P10A,sG10A>,sG10A>,sG15AX>: k = 9, 14189 words, label-separated; (j, q) = (121990569825869329058799, 44481329160610169034951); matches claim: True
+[flat] N<N<P10A,sG10A>,sG10A>: k = 6, 493 words, label-separated; (j, q) = (2456189457170401, 842020795989552); matches claim: True
+[flat] N<P10A,sG10A>: k = 4, 59 words, label-separated; (j, q) = (18185380033, 5419212384); matches claim: True
+[flat] N<N<N<P15A8,G5>,G5>,G5>: k = 6, 493 words, label-separated; (j, q) = (2456189457170401, 842020795989552); matches claim: True
+[flat] N<N<P15A8,G5>,G5>: k = 5, 166 words, label-separated; (j, q) = (6682859200815, 2169812061039); matches claim: True
+[flat] N<N<N<N<N<P15A8,G5>,G5>,G5>,G5>,sG10A>: k = 9, 14189 words, label-separated; (j, q) = (121990569825869329058799, 44481329160610169034951); matches claim: True
+[flat] N<N<N<N<P15A8,G5>,G5>,G5>,G5>: k = 7, 1383 words, label-separated; (j, q) = (902811969467537039, 320055843697850823); matches claim: True
+[X10] independent in C7^10: True
+[Het] explicit G15Ah aux classes (X0, XH, XV) = (35304230, 5948463, 8179834)  phet formula = (35304230, 5948463, 8179834)  words near both transversals: 0
+[C7] my M has 360 digits, d = 700; equals certificate.txt: True
+[C7] rate (integer root) 3.2588405876641976  ; claimed 3.2588405876641976
+[C7] exceeds Tang d=680 exactly: True; Tang rate 3.2588387054446088
+[C7 with Tang J+ instead of the new J+] rate 3.2588405854138365
+done 124s

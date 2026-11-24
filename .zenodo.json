@@ -1,0 +1,8 @@
+{
+  "title": "Shannon capacity of C7 and C13: certificates for new lower bounds",
+  "description": "Exact certificates for the lower bounds Θ(C7) ≥ 3.2588405876641976 (dimension 700) and Θ(C13) ≥ 6.302930359067765 (dimension 522), with checking programs and an independent verification written from the definitions.",
+  "creators": [{"name": "Inan, Emirhan", "affiliation": "Boğaziçi University"}],
+  "upload_type": "dataset",
+  "license": "cc-by-4.0",
+  "keywords": ["Shannon capacity", "odd cycles", "zero-error capacity", "independent sets", "strong product", "combinatorics"]
+}

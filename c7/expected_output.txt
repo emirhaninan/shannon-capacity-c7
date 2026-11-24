@@ -1,0 +1,135 @@
+phase: stage_exchanges.py
+   |   [ok] J+ from exchanges.txt: |J+| = 134753 (272 removed, 272 inserted); inserted words independent and non-confusable with the kept words of T(I_10)
+   |   [ok] base gadget and Tan patterns built 0s
+   |   [new] C1 = 27512   (Tan/Tang: 27488, diff +24)
+   |   [new] C2 = 12839823   (Tan/Tang: 12839823, diff +0)
+   |   [new] C3 = 14047245   (Tan/Tang: 14045805, diff +1440)
+   |   [new] C4 = 841738338439636   (Tan/Tang: 841760069965664, diff -21731526028)
+   |   [new] q15 = 12870309   (Tan/Tang: 12872271, diff -1962)
+   | 10-dim neighbourhood maps ready 87s
+   |   [new] Tang count (j,q)[S<G15X,G10,P15X>] = 6682034753199, 2168034367143   (Tang: 6682034753199, 2168034218823)
+   |   [new] Tang count (j,q)[N<S<G15X,G10,P15X>,G5>] = 2455687960854817, 840885603071680   (Tang: 2455687916341537, 840885528362080)
+   |   [new] Tang count (j,q)[S<G15AX,G5,P15A8>] = 18184231617, 5415711000   (Tang: 18184231617, 5415710640)
+   |   [new] Tang count (j,q)[N<S<G15AX,G5,P15A8>,G5>] = 6681986196399, 2167394967559   (Tang: 6681986127279, 2167394749159)
+   |   [new] Tang count (j,q)[S<G15AX,sG15AX,P15A5>] = 2455726444728097, 841149986046624   (Tang: 2455726444728097, 841149894373344)
+   |   [new] Tang count (j,q)[N<S<G15AX,sG15AX,P15A5>,sG15AX>] = 121947930967366084853231, 44457044652654668333431   (Tang: 121947917749163375722991, 44457037740952884957687)
+   |   [new] Tang count (j,q)[S<G15AX,sG15Ah,P15A8>] = 2455726444728097, 841738338439636   (Tang: 2455726444728097, 841760069965664)
+   |   [new] Tang count (j,q)[N<S<G15AX,sG15Ah,P15A8>,sG15Ah>] = 121947930967366084853231, 44502578413443915562303   (Tang: 121947917749163375722991, 44503522527412807055847)
+   |   [ok] I_10 = main code of Gao(G5, G5) proved independent directly from its blocks (so T(I_10) is; T is an automorphism); with the exchange check above, J+ is independent
+   | step 2a: base codebook J15'
+   |   [ok] J15' = s*(label code, 21 words over G5^3) independent; |J15'| = 49496015 (Tan: 49495055), q vs X0(G15X/G15AX/G15DX) = 12843063 (Tan: 12839823)
+   |   [ok] Tan pattern data rebuilt with J15'
+   | step 2b: the new side codebooks
+   |   [ok] S<G15AX,G5,P15A8>: J = sigma(label code, 59 words over G5xG5xG5xG5; per-coordinate automorphisms ['s*']) independent; j = 18185380033, q = 5419212384  (0s)
+   |   [ok] N<S<G15AX,G5,P15A8>,G5>: J = sigma(label code, 166 words over G5xG5xG5xG5xG5; per-coordinate automorphisms ['s*']) independent; j = 6682859200815, q = 2169812061039  (0s)
+   |   [ok] S<G15AX,sG15AX,P15A5>: J = sigma(label code, 493 words over G5xG5xG5xG5xG5xG5; per-coordinate automorphisms ['s*']) independent; j = 2456189457170401, q = 842020795989552  (0s)
+   |   [ok] N<S<G15AX,sG15AX,P15A5>,sG15AX>: J = sigma(label code, 14189 words over G5xG5xG5xG5xG5xG5xG5xG5xG5; per-coordinate automorphisms ['s*']) independent; j = 121990569825869329058799, q = 44481329160610169034951  (6s)
+   |   [ok] S<G15AX,sG15Ah,P15A8>: J = sigma(label code, 493 words over G5xG5xG5xG5xG5xG5; per-coordinate automorphisms ['s*']) independent; j = 2456189457170401, q = 841963062968164  (0s)
+   |   [ok] N<S<G15AX,sG15Ah,P15A8>,sG15Ah>: J = sigma(label code, 14189 words over G5xG5xG5xG5xG5xG5xG5xG5xG5; per-coordinate automorphisms ['T', 's*']) independent; j = 121990569825869329058799, q = 44481093721648666052029  (6s)
+   |   [ok] N<N<S<G15AX,G5,P15A8>,G5>,G5>: J = sigma(label code, 493 words over G5xG5xG5xG5xG5xG5; per-coordinate automorphisms ['s*']) independent; j = 2456189457170401, q = 842020795989552  (0s)
+   | step 3: recursion and top level
+   | 
+   | M = 7635971837819016948567221152128229246557445654089530762883811362221357785390632709352430675151575414783360674971887176345567961493179821606965955504911375792860680813020139260972573438073254899683783221269211746345737188457806799484537878264485724149518903107249238632403360058755768175968539633989933845410247445499486477544454039398950171243242881
+   | 
+   | CERTIFIED (given Tandon's Theorem 1 and the Gao/BPZ lemmas)  Theta(C_7) >= M^(1/680) = 3.2588399806928573...
+   | family stage (Tang's J+)                                M_family^(1/680)   = 3.2588399725048173...   M > M_family: True
+   | side stage                                                      M_side^(1/680)   = 3.2588392704292328...
+   | Tang                                                    M_Tang^(1/680) = 3.2588387054446088...
+   | OK  (197s)
+phase: stage_nesting.py
+   |   [ok] J+ = T(I_10) with Tandon's 8 exchanges is a valid exchange set
+   |   [ok] base gadget and Tan patterns built 0s
+   | Tang M reproduced
+   |   [ok] C1 = 27488
+   |   [ok] C2 = 12839823
+   |   [ok] C3 = 14045805
+   |   [ok] C4 = 841760069965664
+   |   [ok] q15 = 12872271
+   | 10-dim neighbourhood maps ready 39s
+   |   [ok] Tang count q[S<G15X,G10,P15X>] = 2168034218823
+   |   [ok] Tang count q[N<S<G15X,G10,P15X>,G5>] = 840885528362080
+   |   [ok] Tang count q[S<G15AX,G5,P15A8>] = 5415710640
+   |   [ok] Tang count q[N<S<G15AX,G5,P15A8>,G5>] = 2167394749159
+   |   [ok] Tang count q[S<G15AX,sG15AX,P15A5>] = 841149894373344
+   |   [ok] Tang count q[N<S<G15AX,sG15AX,P15A5>,sG15AX>] = 44457037740952884957687
+   |   [ok] Tang count q[S<G15AX,sG15Ah,P15A8>] = 841760069965664
+   |   [ok] Tang count q[N<S<G15AX,sG15Ah,P15A8>,sG15Ah>] = 44503522527412807055847
+   | step 2: the new side codebooks
+   |   [ok] S<G15AX,G5,P15A8>: J = T(main code of Gao(G10, G10)) independent; j = 18184254657, q = 5416543392
+   |   [ok] N<S<G15AX,G5,P15A8>,G5>: J = T(main code of Gao(G10, G15h)) independent; j = 6682034753199, q = 2168034218823
+   |   [ok] S<G15X,G10,P15X>: J = T(main code of Gao(G10, G15h)) independent; j = 6682034753199, q = 2168034218823
+   |   [ok] S<G15AX,sG15AX,P15A5>: J = T(main code of Gao(G15h, G15h)) independent; j = 2455726444728097, q = 841149894373344
+   |   [ok] N<S<G15AX,sG15AX,P15A5>,sG15AX>: J = T(separated code (21 words) over families of ['G15h', 'G15Ah', 'G15Ah']) independent; j = 121976928173440563255215, q = 44457579999851129824439
+   |   [ok] N<S<G15AX,sG15Ah,P15A8>,sG15Ah>: J = T(separated code (21 words) over families of ['G15Ah', 'G15h', 'G15Ah']) independent; j = 121976928173440563255215, q = 44500305099870120677381
+   |   [ok] N<N<S<G15AX,G5,P15A8>,G5>,G5>: J = T(separated code (7 words) over families of ['G15h', 'G15h']) independent; j = 2455726444728097, q = 841149894373344
+   | step 3: recursion and top level
+   |   [ok] Tang's data reproduce his M exactly
+   | 
+   | M = 7634840225586582934811198550354171599225480463428212459243689382487283121785232088172366699900470171670780809059482201687548093001258641061892937340056753659038196024862822286147255250219607812901083215887813898160204311031630100633338766360220618434667982378974873368004766647379177265634669187470598235493989460001717728496948399134025203736237441
+   | 
+   | CERTIFIED (given Tandon's Theorem 1 and the Gao/BPZ lemmas)  Theta(C_7) >= M^(1/680) = 3.2588392704292328...
+   | Tang                                                    M_Tang^(1/680) = 3.2588387054446088...
+   | OK  (46s)
+   | step 4: exact chunk-summary DP, validated on every known count
+   |   [ok] symbolic base gadgets and Tan patterns agree with the physical ones
+   |   [ok] DP C1 = 27488
+   |   [ok] DP C2 = 12839823
+   |   [ok] DP C3 = 14045805
+   |   [ok] DP q15 = 12872271
+   |   [ok] DP C4 = 841760069965664
+   |   [ok] DP Tang q[S<G15X,G10,P15X>] = 2168034218823
+   |   [ok] DP Tang q[N<S<G15X,G10,P15X>,G5>] = 840885528362080
+   |   [ok] DP Tang q[S<G15AX,G5,P15A8>] = 5415710640
+   |   [ok] DP Tang q[N<S<G15AX,G5,P15A8>,G5>] = 2167394749159
+   |   [ok] DP Tang q[S<G15AX,sG15AX,P15A5>] = 841149894373344
+   |   [ok] DP Tang q[N<S<G15AX,sG15AX,P15A5>,sG15AX>] = 44457037740952884957687
+   |   [ok] DP Tang q[S<G15AX,sG15Ah,P15A8>] = 841760069965664
+   |   [ok] DP Tang q[N<S<G15AX,sG15Ah,P15A8>,sG15Ah>] = 44503522527412807055847
+   |   [ok] DP side-stage codebook q[N<S<G15AX,sG15AX,P15A5>,sG15AX>] = 44457579999851129824439
+   |   [ok] DP side-stage codebook q[N<S<G15AX,sG15Ah,P15A8>,sG15Ah>] = 44500305099870120677381
+   |   [ok] DP side-stage codebook q[N<N<S<G15AX,G5,P15A8>,G5>,G5>] = 841149894373344
+   | step 5: new side codebooks
+   |   [ok] N<N<N<N<P15A8,G5>,sG5>,G5>,sG5>: J = T(separated code, 21 words, over ['G15Ah', 'G10D', 'G10D']) independent; j = 902701887614070095, q = 319728170791727079 (two methods)
+   |   [ok] N<N<N<P15A8,G5>,sG5>,G5>: J = T(separated code, 21 words, over ['G10D', 'G10D', 'G10A']) independent; j = 2455957572166433, q = 841115078149008 (two methods)
+   |   [ok] N<N<P15A8,G5>,sG5>: J = T(separated code, 21 words, over ['G10A', 'G10', 'G5']) independent; j = 6682409489071, q = 2167993673079 (two methods)
+   |   [ok] N<P15A8,G5>: J = T(separated code, 21 words, over ['G10A', 'G5', 'sG5']) independent; j = 18184849857, q = 5416242120 (two methods)
+   |   [ok] N<N<N<P10A,sG10A>,sG10A>,sG15AX>: J = T(separated code, 21 words, over ['G15Dh', 'G15h', 'G15Dh']) independent; j = 121976928173440563255215, q = 44457579999851129824439 (two methods)
+   |   [ok] N<N<P10A,sG10A>,sG10A>: J = T(separated code, 21 words, over ['G10A', 'G10', 'G10D']) independent; j = 2455957572166433, q = 841115078149008 (two methods)
+   |   [ok] N<P10A,sG10A>: J = T(separated code, 21 words, over ['G5', 'G10D', 'G5']) independent; j = 18184849857, q = 5416242120 (two methods)
+   |   [ok] N<N<N<P10A,G5>,G5>,G5>: J = T(separated code, 21 words, over ['G10A', 'G5', 'G10A']) independent; j = 6682409489071, q = 2167993673079 (two methods)
+   |   [ok] N<N<P10A,G5>,G5>: J = T(separated code, 21 words, over ['G10A', 'G5', 'G5']) independent; j = 18184849857, q = 5416242120 (two methods)
+   |   [ok] N<P10A,G5>: J = T(separated code, 21 words, over ['G5', 'G5', 'sG5']) independent; j = 49496015, q = 12840111 (two methods)
+   |   [ok] N<N<N<N<N<P15A8,G5>,G5>,G5>,G5>,sG10A>: J = T(separated code, 21 words, over ['G15h', 'G15Ah', 'G15Ah']) independent; j = 121976928173440563255215, q = 44457579999851129824439 (two methods)
+   |   [ok] N<N<N<N<P15A8,G5>,G5>,G5>,G5>: J = T(separated code, 21 words, over ['G10D', 'G15Ah', 'G10']) independent; j = 902701887614070095, q = 319728170791727079 (two methods)
+   |   [ok] N<N<N<P15A8,G5>,G5>,G5>: J = T(separated code, 21 words, over ['G10', 'G10A', 'G10A']) independent; j = 2455957572166433, q = 841115078149008 (two methods)
+   |   [ok] N<N<P15A8,G5>,G5>: J = T(separated code, 21 words, over ['G10A', 'G10D', 'sG5']) independent; j = 6682409489071, q = 2167993673079 (two methods)
+   | step 6: recursion and top level
+   |   [ok] the general recursion reproduces Tang's M and the side-stage M exactly
+   | 
+   | M = 7635995515059734308373800744655492080859225579057105398717159104913179622630899056689910914622228796919042222641321813621843960716519610984233530435397298663530200120687420051404365423930989447140578471516320210391965170762224512929763727555810517056740261892915369451686510986587448611905650941373676250168283154823514452791817907598905903839625089
+   | 
+   | CERTIFIED (given Tandon's Theorem 1 and the Gao/BPZ lemmas)  Theta(C_7) >= M^(1/680) = 3.2588399955529057...
+   | side stage                                                      M_side^(1/680) = 3.2588392704292328...
+   | OK nesting stage  (84s)
+phase: stacked construction (J+ = exchanges.txt, J15')
+  [ok] J+_d: |J+| = 134753, C1 = 27512, C3 = 14047245;  J15' = (49496015, 12843063)
+  [ok] DP + recursion reproduce the exchange-stage M exactly (all seven family-stage codebooks recounted with the new J+)
+  [ok] N<N<N<N<P15A8,G5>,sG5>,G5>,sG5>: J = sigma(flat label code, 1383 words over G5^7; automorphisms ['s*']) independent; j = 902811969467537039, q = 320055843697850823 (two methods, 1s)
+  [ok] N<N<N<P15A8,G5>,sG5>,G5>: J = sigma(flat label code, 493 words over G5^6; automorphisms ['s*']) independent; j = 2456189457170401, q = 842020795989552 (two methods, 0s)
+  [ok] N<N<P15A8,G5>,sG5>: J = sigma(flat label code, 166 words over G5^5; automorphisms ['s*']) independent; j = 6682859200815, q = 2169812061039 (two methods, 0s)
+  [ok] N<P15A8,G5>: J = sigma(flat label code, 59 words over G5^4; automorphisms ['s*']) independent; j = 18185380033, q = 5419212384 (two methods, 0s)
+  [ok] N<N<N<P10A,sG10A>,sG10A>,sG15AX>: J = sigma(flat label code, 14189 words over G5^9; automorphisms ['s*']) independent; j = 121990569825869329058799, q = 44481329160610169034951 (two methods, 9s)
+  [ok] N<N<P10A,sG10A>,sG10A>: J = sigma(flat label code, 493 words over G5^6; automorphisms ['s*']) independent; j = 2456189457170401, q = 842020795989552 (two methods, 0s)
+  [ok] N<P10A,sG10A>: J = sigma(flat label code, 59 words over G5^4; automorphisms ['s*']) independent; j = 18185380033, q = 5419212384 (two methods, 0s)
+  [ok] N<N<N<P15A8,G5>,G5>,G5>: J = sigma(flat label code, 493 words over G5^6; automorphisms ['s*']) independent; j = 2456189457170401, q = 842020795989552 (two methods, 0s)
+  [ok] N<N<P15A8,G5>,G5>: J = sigma(flat label code, 166 words over G5^5; automorphisms ['s*']) independent; j = 6682859200815, q = 2169812061039 (two methods, 0s)
+  [ok] N<N<N<N<N<P15A8,G5>,G5>,G5>,G5>,sG10A>: J = sigma(flat label code, 14189 words over G5^9; automorphisms ['s*']) independent; j = 121990569825869329058799, q = 44481329160610169034951 (two methods, 7s)
+  [ok] N<N<N<N<P15A8,G5>,G5>,G5>,G5>: J = sigma(flat label code, 1383 words over G5^7; automorphisms ['s*']) independent; j = 902811969467537039, q = 320055843697850823 (two methods, 0s)
+
+d = 700
+M = 139373965073705544875900723233795809210313947401426444544494305544935531023629414889076915681802791451849462808609899263808253180883065696604741677354638518866625449469107758401453290320032799613293055221963108967701230969191056332959016155403418499878790099505931828803969843246171656699266368939406197633834905443255116532353781687201084521992199358547693121
+
+CERTIFIED (given Tandon's Theorem 1 and the Gao/BPZ lemmas)  Theta(C_7) >= M^(1/700) = 3.2588405876641976...
+nesting stage (d = 680)                                 3.2588399955529057...   exceeded (exact): True
+exchange stage (d = 680)                                3.2588399806928573...   exceeded (exact): True
+OK: certificate.txt verified  (334s)
