@@ -22,13 +22,13 @@ The constructions use the seven-family framework of Buys, Polak and Zuiddam (BPZ
 
 ### $C_7$
 
-We start from L. Tang's construction (dimension 680) and change it in three ways.
+The construction starts from L. Tang's (dimension 680) and changes it in three ways.
 
-1. **Flat label codes as side codebooks.** Earlier constructions use images of main codes of pure Gao products as side codebooks. We use instead codes built directly on the label families of the 5-dimensional base gadget $G_5$: for a set $K$ of pairwise separated label words over $k$ copies of $G_5$, the union of the products of families, mapped by the automorphism
+1. **Flat label codes as side codebooks.** Earlier constructions use images of main codes of pure Gao products as side codebooks. Here they are replaced by codes built directly on the label families of the 5-dimensional base gadget $G_5$: for a set $K$ of pairwise separated label words over $k$ copies of $G_5$, the union of the products of families, mapped by the automorphism
    $$s^*(x) = (x_0,\; 2 - x_2,\; x_4,\; x_1,\; 2 - x_3)$$
    in each copy, is independent. Good codes $K$ are found as weighted independent sets in a strong power of the label conflict graph. In dimension 45 the new codebook has $j = 121990569825869329058799$ (Tang: $121947917749163375722991$).
-2. **An improved 10-dimensional codebook $J^+$.** Tandon's $J^+$ is obtained from $(T \times T)(I_{10})$ by eight exchanges along private pairs. We use 272 exchanges, found by an exact integer program: Tandon's eight, twelve disjoint 15-for-15 exchanges and 84 one-for-one swaps. The size stays 134753, and the count $C_1$ rises from 27488 to 27512.
-3. **Deeper nesting.** Tang nests patterns to depth 2. With exact counting we nest to depth 5, recomputing the neutral codebook along each chain.
+2. **An improved 10-dimensional codebook $J^+$.** Tandon's $J^+$ is obtained from $(T \times T)(I_{10})$ by eight exchanges along private pairs. The new $J^+$ uses 272 exchanges, found by an exact integer program: Tandon's eight, twelve disjoint 15-for-15 exchanges and 84 one-for-one swaps. The size stays 134753, and the count $C_1$ rises from 27488 to 27512.
+3. **Deeper nesting.** Tang nests patterns to depth 2. With exact counting, the patterns are nested to depth 5, recomputing the neutral codebook along each chain.
 
 The top level applies the BPZ rule $S_{3b}$ and terminal code $K_{4a}$ to three gadgets of dimensions 40, 80 and 55, giving dimension $4 \cdot 175 = 700$.
 
@@ -38,7 +38,7 @@ In the BPZ framework, the words in families A and D are assigned by fixed substi
 
 **Lemma.** Let $(F_l)$ be a seven-family representation and $Y = F_H \cup F_V \cup F_O$. Any words of $F_A$ or $F_D$ that are not confusable with any word of $Y$ can be moved to $F_N$, and the result is again a seven-family representation.
 
-Moving words into N usually increases the final count, because N carries the largest weight. To know exactly which words may be moved at each step of a schedule, we propagate exact *flag tables*. These record, for each word, which families it is confusable with, and they are kept conservative after each move.
+Moving words into N usually increases the final count, because N carries the largest weight. To know exactly which words may be moved at each step of a schedule, exact *flag tables* are propagated. These record, for each word, which families it is confusable with, and they are kept conservative after each move.
 
 Applied to G. Long's schedule over the BPZ base system in $C_{13}^{\boxtimes 6}$ (49 nodes, terminal code $K_{3a}$, dimension $6 \cdot 87 = 522$), with re-classification at six internal nodes and at the three terminal children, this gives $\Theta(C_{13}) \ge 6.302930359067765$.
 
