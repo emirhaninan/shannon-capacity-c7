@@ -1,5 +1,7 @@
 # New lower bounds on the Shannon capacity of C7 and C13
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24517880.svg)](https://doi.org/10.5281/zenodo.24517880)
+
 | Graph | Previous best | New lower bound | Dimension |
 |---|---|---|---|
 | $C_7$ | 3.2588387054 (L. Tang, 2026) | **3.2588405877** | 700 |
@@ -76,6 +78,10 @@ This work builds on:
 The files in `c13/data/` come from the public repositories of BPZ and Long, under their licenses (see `NOTICE`).
 
 The search strategy was conceived by the author and the code developed through many a back and forth with Claude.
+
+## Citation
+
+Emirhan Inan, *Certificates for new lower bounds on the Shannon capacity of C7 and C13* (2026). https://doi.org/10.5281/zenodo.24517880
 
 ## License
 
